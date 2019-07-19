@@ -1,0 +1,77 @@
+
+.aboutUs {
+  width: 100%;
+  background-color: #100f0f;
+  margin-top: 60px;
+  padding-bottom: 40px;
+}
+.aboutUs_flex {
+  width: 100vw;
+  margin: 0 auto 3px;
+}
+@media (min-width: 1200px) {
+  .aboutUs_flex {
+    width: 1210px;
+  }
+}
+.aboutUs h1 {
+  margin-top: 60px;
+  text-align: center;
+  background-color: #d0d0d0;
+  padding: 37px 0;
+  border-bottom: 2px solid white;
+  letter-spacing: 5px;
+}
+@media (max-width: 768px) {
+  .aboutUs h1 {
+    padding: 20px;
+  }
+}
+.aboutUs_text {
+  color: white;
+  display: flex;
+  padding-top: 30px;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.aboutUs_intro {
+  width: 30%;
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 41px;
+}
+@media (max-width: 768px) {
+  .aboutUs_intro {
+    width: 80%;
+    margin-bottom: 40px;
+  }
+}
+.aboutUs_drepta {
+  color: #b54d61;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  width: 85%;
+}
+@media (max-width: 768px) {
+  .aboutUs_drepta {
+    width: 80%;
+  }
+}
+.aboutUs_paragraphs {
+  width: 50%;
+  margin-left: 5%;
+}
+@media (max-width: 768px) {
+  .aboutUs_paragraphs {
+    width: 80%;
+    margin-left: 0;
+  }
+}
+.aboutUs_paragraphs p {
+  font-weight: 300;
+  margin-bottom: 30px;
+}

@@ -1,0 +1,204 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Overpass', sans-serif;
+  }
+  #top {
+    position: absolute;
+    top: 0;
+  }
+  .header {
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    z-index: 9999;
+    transition: height 0.4s linear 0s;
+  }
+  .header_logo {
+    height: 48px;
+    margin-left: 4%;
+  }
+  .header_menu {
+    display: flex;
+    width: 30%;
+    margin-right: 10%;
+  }
+  @media (max-width: 768px) {
+    .header_menu {
+      display: none;
+    }
+  }
+  .menu_table {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 14px;
+  }
+  .menu_item {
+    display: block;
+  }
+  .menu_item a {
+    text-decoration: none;
+    color: black;
+  }
+  .menu_divide {
+    display: block;
+  }
+  .footer {
+    width: 100%;
+    height: 400px;
+    background-image: url(../img/tlo_kont-min.png);
+    background-size: cover;
+    position: relative;
+    color: white;
+    background-size: cover;
+  }
+  .footer_contact {
+    position: absolute;
+    bottom: 80px;
+    left: 120px;
+  }
+  @media (max-width: 768px) {
+    .footer_contact {
+      left: 25px;
+    }
+  }
+  .footer_info {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer_email {
+    margin-bottom: 30px;
+  }
+  .footer_title {
+    position: absolute;
+    top: 80px;
+    right: 240px;
+    color: #b54d61;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 3px;
+  }
+  @media (max-width: 768px) {
+    .footer_title {
+      left: 25px;
+    }
+  }
+  .footer_info a {
+    color: #f1f1f1;
+    margin: 5px;
+    font-size: 30px;
+    text-decoration: none;
+  }
+  .footer_info a:hover {
+    color: #b54c61;
+  }
+  .footer_wrapper {
+    margin-bottom: 30px;
+  }
+  .header-mobile_menu {
+    display: none;
+    width: 100vw;
+    position: absolute;
+    top: 60px;
+    background-color: white;
+    transition: height 0.5s linear;
+    height: 0;
+    overflow: hidden;
+
+  }
+  .header-mobile_menu--active {
+    height: 250px;
+  }
+  @media (max-width: 768px) {
+    .header-mobile_menu {
+      display: block;
+    }
+  }
+  .header-mobile_menu .menu-mobile_table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .header-mobile_menu .menu-mobile_item {
+    border-top: 1px solid #d0d0d0;
+    text-align: center;
+  }
+  .header-mobile_menu .menu-mobile_item:first-child {
+    border: none;
+  }
+  .header-mobile_menu .menu-mobile_item a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    width: 100%;
+    height: 50px;
+  }
+  .header-mobile_menu .menu-mobile_item a:hover {
+    background-color: #f1f1f1;
+  }
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  @media (min-width: 768px) {
+    .header .menu-icon {
+      display: none;
+    }
+  }
+  .header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background 0.2s ease-out;
+    width: 26px;
+  }
+  .header .menu-icon .navicon:before, .header .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all 0.2s ease-out;
+    width: 100%;
+  }
+  .header .menu-icon .navicon:before {
+    top: 7px;
+  }
+  .header .menu-icon .navicon:after {
+    top: -7px;
+  }
+  .header .menu-btn {
+    display: none;
+  }
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before, .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+  

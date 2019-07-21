@@ -1,18 +1,27 @@
 document.addEventListener("DOMContentLoaded", function () {
-    var background = document.querySelector(".projects");
-    var backgroundImgs = ["./img/projekty-wizualizacje/4 kąty na Warsz. Pradze/1.jpg",
-        "./img/projekty-wizualizacje/Minimalistyczne glamour/SALON2.jpg",
-        "./img/projekty-wizualizacje/Nowoczesność i elegancja/SALON2.jpg",
-        "../img/tlo5-min.png", 
-    ];
-    var i = 0;
-    setInterval(function () {
+    var backgrounds = [document.querySelector(`.projects_background--1`),
+    document.querySelector(`.projects_background--2`),
+    document.querySelector(`.projects_background--3`)]
 
-        background.style.backgroundImage = `url('${backgroundImgs[i]}')`;
+
+  
+    var i = 1;
+    setInterval(function () {
+        var fadeOut = backgrounds[i];
+
+        fadeOut.style.opacity = "1";
+        for(var j=0;j<backgrounds.length;j++) {
+            if (i != j) {
+            backgrounds[j].style.opacity = "0"; }
+        }
+       
+        
         i++;
         if (i > 2) {
-            i = 0
+            
+            i = 0;
         }
     }, 7000);
 
 })
+

@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", function(){
     var mobileMenu = document.querySelector(".header-mobile_menu");
     var hamburger = document.querySelector(".menu-btn");
     var header = document.querySelector('header');
-    var timeout;
     var anchors = document.querySelectorAll('a[href*="#"]');
+    var lastScroll = 0;
 
     for (var x of anchors) {
         x.addEventListener('click', function() {
@@ -15,42 +15,31 @@ document.addEventListener("DOMContentLoaded", function(){
     }
 
     hamburger.addEventListener("click", function(){
+        if (mobileMenu.classList.contains('nocontact')) {
+            mobileMenu.classList.toggle("header-mobile_menu-nocontact--active");
+        } else {
         mobileMenu.classList.toggle("header-mobile_menu--active");
+        }
     })
-
-    var scrollStop = function (callback) {
-        if (!callback|| typeof callback !== 'function') return;
-        var isScrolling;
-        window.addEventListener('scroll', function (event) {
-            window.clearTimeout(isScrolling);
-            isScrolling = setTimeout(function() {
-            callback();
-            }, 66);
-    
-        }, false);
-    
-    };
 
     function displayHeader() {
-        if (window.pageYOffset == 0) {
-            header.style.height = "60px";
-            header.style.overflow = "visible";
-            header.style.transition = "none";
-        }
-        
-        timeout = setTimeout(function(){
-            header.style.height = "60px";
-            header.style.overflow = "visible";
-
-
-        },700);        
+        header.style.height = "60px";
+        header.style.overflow = "visible";
     }
-
+        
+       
     document,addEventListener("scroll", function() {
+        console.log("windowScroll:" + window.pageYOffset);
+        console.log(lastScroll);
+        if (window.pageYOffset > lastScroll) {
         header.style.height ="0";
-        header.style.overflow = "hidden";
+        header.style.overflow = "hidden"; 
+        mobileMenu.classList.remove("header-mobile_menu--active");
+        }
 
-        clearTimeout(timeout);
+        else {
+            displayHeader();
+        }
+        lastScroll = window.pageYOffset;
     })
-    scrollStop(displayHeader);
 })

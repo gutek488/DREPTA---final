@@ -64,7 +64,7 @@
 }
 @media (max-width: 768px) {
   .description {
-    height: 145%;
+    height: 100%;
   }
 }
 .description_drepta {
@@ -81,7 +81,7 @@
   .description_drepta {
     color: #b54d61;
     top: 10%;
-    left: 5%;
+    left: 10%;
   }
 }
 .description_background {
@@ -111,6 +111,9 @@
   .description_textbox {
     top: 20%;
     width: 80%;
+    margin: auto;
+    position: static;
+    padding-top: 45%;
   }
 }
 .description_marked {
@@ -341,11 +344,35 @@
 .projects {
   width: 100%;
   height: 100%;
-  background-image: url(../img/tlo5-min.png);
+  position: relative;
+}
+.projects_background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
   background-size: cover;
   background-position: center;
-  transition: background-image 3s ease-in-out;
+  transition: opacity 1s ease-in-out;
 }
+.projects_background--1 {
+  background-image: url(../img/tlo5-min.png);
+  z-index: -3;
+}
+.projects_background--2 {
+  background-image: url(../img/projekty-wizualizacje/4\ kąty\ na\ Warsz.\ Pradze/1.jpg);
+  z-index: -2;
+  opacity: 0
+}
+.projects_background--3 {
+  
+  background-image: url(../img/projekty-wizualizacje/Minimalistyczne\ glamour/SALON2.jpg);
+  z-index: -1;
+  opacity: 0;
+}
+
+
+
+
 .projects_line {
   height: 10px;
   width: 100%;

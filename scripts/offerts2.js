@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 setTimeout(function () {
                     x.style.height = "0";
                     for (let y of extended) {
-                        y.style.height = "850px";
+                        y.style.height = "920px";
                         setTimeout(function () {
                             y.style.opacity = "1";
                         }, 600)
@@ -59,31 +59,33 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
                 basicOne.style.opacity = "0";
-                basicOne.style.height = "0";
 
 
                 setTimeout(function () {
+                    basicOne.style.height = "0";
+
                     if (btnsArr.indexOf(that) == 0) {
                         extendedOne.style.height = "330px"
                     } else if (btnsArr.indexOf(that) == 1) {
-                        extendedOne.style.height = "511px"
+                        extendedOne.style.height = "520px"
 
                     } else {
-                        extendedOne.style.height = "840px"
+                        extendedOne.style.height = "920px"
 
                     }
                     setTimeout(function () {
                         extendedOne.style.opacity = "1";
                     }, 500)
 
-                }, 1000);
+                }, 600);
             } else {
 
 
                 extendedOne.style.opacity = "0";
-                extendedOne.style.height = "0";
 
                 setTimeout(function () {
+                    extendedOne.style.height = "0";
+
                     basicOne.style.height = "180px";
 
                     setTimeout(function () {
@@ -93,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                     }, 500)
 
-                }, 1000);
+                }, 600);
             }
         })
     }

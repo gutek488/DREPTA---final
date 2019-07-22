@@ -65,12 +65,12 @@ document.addEventListener("DOMContentLoaded", function () {
                     basicOne.style.height = "0";
 
                     if (btnsArr.indexOf(that) == 0) {
-                        extendedOne.style.height = "330px"
+                        extendedOne.style.height = "350px"
                     } else if (btnsArr.indexOf(that) == 1) {
-                        extendedOne.style.height = "520px"
+                        extendedOne.style.height = "560px"
 
                     } else {
-                        extendedOne.style.height = "920px"
+                        extendedOne.style.height = "960px"
 
                     }
                     setTimeout(function () {

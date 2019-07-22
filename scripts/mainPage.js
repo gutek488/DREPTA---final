@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelector(`.projects_background--3`)]
 
 
-  
+    if (window.innerWidth > 768) {
     var i = 1;
     setInterval(function () {
         var fadeOut = backgrounds[i];
@@ -22,6 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
             i = 0;
         }
     }, 7000);
-
+    }
 })
 

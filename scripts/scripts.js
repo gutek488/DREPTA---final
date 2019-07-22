@@ -5,11 +5,15 @@ document.addEventListener("DOMContentLoaded", function(){
     var hamburger = document.querySelector(".menu-btn");
     var header = document.querySelector('header');
     var anchors = document.querySelectorAll('a[href*="#"]');
+    var checkbox = document.querySelector('.menu-btn');
     var lastScroll = 0;
 
     for (var x of anchors) {
         x.addEventListener('click', function() {
             mobileMenu.classList.remove("header-mobile_menu--active");
+            mobileMenu.classList.remove("header-mobile_menu-nocontact--active");
+            checkbox.checked = false;
+
         }
             )
     }
@@ -29,12 +33,15 @@ document.addEventListener("DOMContentLoaded", function(){
         
        
     document,addEventListener("scroll", function() {
-        console.log("windowScroll:" + window.pageYOffset);
-        console.log(lastScroll);
+       
         if (window.pageYOffset > lastScroll) {
         header.style.height ="0";
         header.style.overflow = "hidden"; 
         mobileMenu.classList.remove("header-mobile_menu--active");
+        mobileMenu.classList.remove("header-mobile_menu-nocontact--active");
+        checkbox.checked = false;
+
+
         }
 
         else {

@@ -195,6 +195,8 @@
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+    height: 150px;
+    padding: 15px 0px;
   }
 }
 .aboutus_footer p {

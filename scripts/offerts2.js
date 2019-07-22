@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 setTimeout(function () {
                     x.style.height = "0";
                     for (let y of extended) {
-                        y.style.height = "920px";
+                        y.style.height = "980px";
                         setTimeout(function () {
                             y.style.opacity = "1";
                         }, 600)

@@ -22,7 +22,7 @@
     align-items: center;
     top: 0;
     z-index: 9999;
-    transition: height 0.3s ease-in-out 0s;
+    transition: top 0.3s ease-in-out 0s;
   }
   .header_logo {
     height: 48px;

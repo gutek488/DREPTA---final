@@ -27,16 +27,14 @@ document.addEventListener("DOMContentLoaded", function(){
     })
 
     function displayHeader() {
-        header.style.height = "60px";
-        header.style.overflow = "visible";
+        header.style.top = "0px";
     }
         
        
     document,addEventListener("scroll", function() {
        
         if (window.pageYOffset > lastScroll) {
-        header.style.height ="0";
-        header.style.overflow = "hidden"; 
+        header.style.top ="-60px";
         mobileMenu.classList.remove("header-mobile_menu--active");
         mobileMenu.classList.remove("header-mobile_menu-nocontact--active");
         checkbox.checked = false;

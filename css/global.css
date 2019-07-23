@@ -129,6 +129,9 @@
   .footer_wrapper {
     margin-bottom: 30px;
   }
+  .footer_telephone {
+    font-size: 16px !important;
+  }
   .header-mobile_menu {
     display: none;
     width: 100vw;

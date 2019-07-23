@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function(){
         if (window.pageYOffset < 1) {
             displayHeader();
 
-        } else if (window.pageYOffset > lastScroll) {
+        } else if (window.pageYOffset > lastScroll && window.pageYOffset > 0) {
         header.style.top ="-60px";
         mobileMenu.classList.remove("header-mobile_menu--active");
         mobileMenu.classList.remove("header-mobile_menu-nocontact--active");

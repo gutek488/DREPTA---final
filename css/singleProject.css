@@ -24,7 +24,7 @@ body {
 }
 .singleProject_img {
   width: 100%;
-  height: 200px;
+  height: -webkit-fill-available;
   margin-top: 20px;
 }
 .singleProject_imgFlex {
@@ -39,6 +39,9 @@ body {
 @media (max-width: 768px) {
   .singleProject_text {
     width: 80vw;
+  }
+  .singleProject_img {
+    height: 100%;
   }
 }
 .singleProject_text h2, .singleProject_text p {

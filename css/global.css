@@ -97,6 +97,7 @@
   @media (max-width: 1500px) {
     .footer_title {
       right: 120px;
+      top: 30px;
     }
   }
   @media (max-width: 1175px) {

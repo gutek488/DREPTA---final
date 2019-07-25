@@ -58,13 +58,24 @@ body {
 .singleProject_text p {
   margin-top: 150px;
 }
+.singleProject_text p.longtitle {
+  margin-top: 210px;
+}
 @media (max-width: 1160px) {
   .singleProject_text p {
     margin-top: 175px;
   }
 }
+@media (min-width: 1400px) {
+  .singleProject_text p.longtitle {
+    margin-top: 180px;
+  }
+}
 @media (max-width: 768px) {
   .singleProject_text p {
+    margin-top: 0;
+  }
+  .singleProject_text p.longtitle {
     margin-top: 0;
   }
 }

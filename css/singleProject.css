@@ -29,9 +29,7 @@ body {
 }
 .singleProject_imgFlex {
   width: 80%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  
 }
 .singleProject_text {
   width: 30%;
@@ -40,6 +38,7 @@ body {
   .singleProject_text {
     width: 80vw;
   }
+  
 }
 .singleProject_text h2, .singleProject_text p {
   display: block;

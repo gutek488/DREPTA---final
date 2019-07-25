@@ -97,6 +97,7 @@
   @media (max-width: 1500px) {
     .footer_title {
       right: 120px;
+      top: 30px;
     }
   }
   @media (max-width: 1175px) {
@@ -128,6 +129,7 @@
   .footer_wrapper {
     margin-bottom: 30px;
   }
+  
   .header-mobile_menu {
     display: none;
     width: 100vw;

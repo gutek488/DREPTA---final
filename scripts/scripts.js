@@ -33,13 +33,14 @@ document.addEventListener("DOMContentLoaded", function(){
        
     document,addEventListener("scroll", function() {
        
-        if (window.pageYOffset > lastScroll) {
+        if (window.pageYOffset < 1) {
+            displayHeader();
+
+        } else if (window.pageYOffset > lastScroll && window.pageYOffset > 0) {
         header.style.top ="-60px";
         mobileMenu.classList.remove("header-mobile_menu--active");
         mobileMenu.classList.remove("header-mobile_menu-nocontact--active");
         checkbox.checked = false;
-
-
         }
 
         else {

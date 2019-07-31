@@ -27,6 +27,10 @@ body {
   height: auto;
   margin-top: 20px;
 }
+.singleProject_img.vertical {
+  width: 49%;
+ 
+}
 .singleProject_imgFlex {
   width: 80%;
   

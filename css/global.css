@@ -56,6 +56,9 @@
     display: block;
     text-align: center;
   }
+  .menu_item a:hover {
+    color:#b54c61;
+  }
   .menu_divide {
     display: block;
   }
@@ -176,6 +179,7 @@
   }
   .header-mobile_menu .menu-mobile_item a:hover {
     background-color: #f1f1f1;
+    color: #b54c61;
   }
   .header .menu-icon {
     cursor: pointer;

@@ -16,7 +16,15 @@ document.addEventListener("DOMContentLoaded", function () {
                 setTimeout(function () {
                     x.style.height = "0";
                     for (let y of extended) {
+                        if (window.innerWidth < 1100) {
+                            y.style.height = "1150px";
+
+                        } else if (window.innerWidth < 1300) {
+                            y.style.height = "1050px";
+
+                        } else {
                         y.style.height = "980px";
+                        }
                         setTimeout(function () {
                             y.style.opacity = "1";
                         }, 600)
@@ -31,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 setTimeout(function () {
                     x.style.height = "0";
                     for (let y of basic) {
-                        y.style.height = "180px";
+                        y.style.height = "200px";
 
                         setTimeout(function () {
                             y.style.opacity = "1";

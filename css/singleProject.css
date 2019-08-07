@@ -27,9 +27,19 @@ body {
   height: auto;
   margin-top: 20px;
 }
+@media (min-width: 1075px) {
 .singleProject_img.vertical {
+  
   width: 49%;
  
+}
+.vertical_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
 }
 .singleProject_imgFlex {
   width: 80%;
@@ -81,6 +91,12 @@ body {
   .singleProject_text p.longtitle {
     margin-top: 0;
   }
+}
+.singleProject_text span {
+  display: block;
+    font-size: 10px;
+    margin-top: 10px;
+
 }
 .singleProject_arrow {
   border-radius: 50%;

@@ -301,7 +301,7 @@
   color: white;
 }
 .offerts .offert_description {
-  height: 180px;
+  height: 200px;
   display: block;
   overflow: hidden;
   transition: height 1s linear, opacity 0.5s linear;
